@@ -209,7 +209,7 @@ public class App {
 				
 			}
 			
-			if(counter>=M && c<101) {
+			if(counter>=M && c!=0 && c<101) {
 				
 				if(c!=100) {
 					System.out.println("\nRep="+String.valueOf(c+1));
