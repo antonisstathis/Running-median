@@ -1,11 +1,13 @@
-
 public class Point {
 	
-	int x;
-	int y;
-	float temperature;
+	private int x;
+	private int y;
+	private float temperature;
+	private RandomNumbersGenerator generator;
 	
 	public Point(RandomNumbersGenerator generator) {
+		
+		this.generator = generator;
 		
 		x = generator.createInt(0, 1000);
 		y = generator.createInt(0, 1000);
@@ -25,6 +27,11 @@ public class Point {
 	public float getTemp() {
 		
 		return temperature;
+	}
+	
+	public void setNewTemp() {
+		
+		this.temperature = generator.createFloat(-50, 50);
 	}
 	
 }
