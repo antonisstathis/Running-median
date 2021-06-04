@@ -203,6 +203,7 @@ public class App {
 				// saves the first 100 points for next use
 				boolean con = con1 || con2 || con3;
 				if(!con && f100!=100) {
+					point.setNewTemp();
 					first100[f100] = point;
 					f100++;
 				}
