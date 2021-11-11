@@ -217,6 +217,18 @@ public class MaxHeap {
 		return false;
 	}
 	
+	public int search(Point point){
+    
+                int x=point.getX();
+                int y=point.getY();
+                if(locators[x][y] != 0){ 
+
+                        return locators[x][y];
+                }
+
+                return 0;
+        }
+	
 	public int getCounter() {
 		
 		return counter;
