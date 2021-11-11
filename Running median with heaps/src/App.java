@@ -52,6 +52,7 @@ public class App {
 				con1 = heap1.search(point.getX(),point.getY());
 				con2 = heap2.search(point.getX(),point.getY());
 				if(con1) {
+					heap1.deleteNode(heap1.search(point),0);
 					counter1--;
 					counter--;
 					diff = counter2-counter1;
@@ -71,6 +72,7 @@ public class App {
 					}
 				}
 				if(con2) {
+					heap2.deleteNode(heap2.search(point),0);
 					counter2--;
 					counter--;
 					diff = counter1-counter2;
